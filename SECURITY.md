@@ -8,7 +8,6 @@ If you discover a security vulnerability, please follow these steps:
 
 1. **Do NOT create a public issue** for security problems.
 2. Report the issue privately via email: **sheetforscript.com**  
-   (replace with your email)
 3. Provide a clear description of:
    - The security issue
    - Steps to reproduce
