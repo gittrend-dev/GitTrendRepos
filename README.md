@@ -10,4 +10,4 @@ A simple GitHub Trending Tracker to fetch top trending repositories by language 
 ## How to Use
 1. Clone the repo:
 ```bash
-git clone https://github.com/sheetforscript-ops/gitTrend.git
+git clone https://github.com/gittrend-dev/GitTrendRepos.git
