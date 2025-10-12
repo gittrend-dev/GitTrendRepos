@@ -12,7 +12,7 @@
 
   <style>
      /* Hero Gradient Animation */
-  .hero {
+.hero {
   position: relative;
   overflow: hidden;
   background: linear-gradient(-45deg, #01060c, #141414, #1a0442, #0e1110);
@@ -25,6 +25,13 @@
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+/* Optional: smooth hover effect for Buy Me a Coffee button */
+a[href*="buymeacoffee"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
 }
 
 /* --- Floating circles --- */
@@ -68,7 +75,7 @@
         <span style="font-weight:bold;font-size:1.6rem;">itTrend</span>
       </a>
       <div class="ms-auto">
-        <a href="https://github.com/sheetforscript-ops/gitTrend" target="_blank" class="text-white fs-1">
+        <a href="https://github.com/gittrend-dev/GitTrendRepos" target="_blank" class="text-white fs-1">
           <i class="fab fa-github"></i>
         </a>
       </div>
@@ -80,16 +87,34 @@
   <div class="floating-bg"></div> <!-- 🌟 animated orbs layer -->
   <div class="container position-relative">
     <h1 class="display-4 fw-bold">Stay Updated with GitHub Trending Repositories</h1>
-    <p class="lead mt-3">Track top trending repositories and never miss important updates.<br>Free module on GitHub. Pro users get automated notifications 4x/week!</p>
-    <a href="https://github.com/gittrend-dev/GitTrendRepos" 
-   class="btn btn-light btn-lg m-2 d-inline-flex align-items-center gap-2" 
-   target="_blank">
-  Try Free on <i class="fab fa-github fa-lg"></i>
-</a>
+    <p class="lead mt-3">
+      Track top trending repositories and never miss important updates.<br>
+      Free module on GitHub. Pro users get automated notifications 4x/week!
+    </p>
 
-    <a href="fronted\pro-selection.html" class="btn btn-warning btn-lg m-2" target="_blank">Subscribe to Pro</a>
+    <!-- Buttons -->
+    <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+      <!-- GitHub Button -->
+      <a href="https://github.com/gittrend-dev/GitTrendRepos" 
+         class="btn btn-light btn-lg d-inline-flex align-items-center gap-2" 
+         target="_blank">
+        Try Free on <i class="fab fa-github fa-lg"></i>
+      </a>
+
+      <!-- Buy Me a Coffee Button -->
+      <a href="https://www.buymeacoffee.com/yourusername" 
+         target="_blank" 
+         style="display: inline-flex; align-items: center; text-decoration: none; background-color: #FFDD00; padding: 8px 12px; border-radius: 8px; font-family: Arial, sans-serif; font-weight: bold; color: #000;">
+        <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" 
+             alt="Buy Me a Coffee" 
+             style="height: 24px; margin-right: 8px;">
+        Buy Me a Coffee
+      </a>
+    </div>
   </div>
 </section>
+
+
 
 
   <!-- Trust / GitHub Badges -->
@@ -178,7 +203,7 @@
               <tr>
                 <th>💡 Feature</th>
                 <th>🆓 Free Plan</th>
-                <th>🚀 Pro Plan</th>
+                <th>🚀 By Me A Coffee</th>
               </tr>
             </thead>
             <tbody>
@@ -239,29 +264,30 @@
     </div>
   </div>
 </section>
+<!-- Buttons -->
+    <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+      <!-- GitHub Button -->
+      <a href="https://github.com/gittrend-dev/GitTrendRepos" 
+         class="btn btn-light btn-lg d-inline-flex align-items-center gap-2" 
+         target="_blank">
+        Try Free on <i class="fab fa-github fa-lg"></i>
+      </a>
+      
 
-
-
-  <!-- Subscribe -->
-  <section class="subscribe py-5 bg-primary text-white text-center">
-    <div class="container">
-      <h2>Get Early Access / Updates</h2>
-      <p>Subscribe via Email or Telegram to get notified when new trends appear!</p>
-      <form action="https://YOUR_BACKEND_URL/subscribe" method="POST" class="d-flex justify-content-center mt-3 flex-wrap">
-        <input type="email" name="email" class="form-control me-2 mb-2" placeholder="Enter your email" required>
-        <input type="text" name="telegram" class="form-control me-2 mb-2" placeholder="Telegram ID (optional)">
-        <button type="submit" class="btn btn-warning mb-2">Subscribe</button>
-      </form>
+      <!-- Buy Me a Coffee Button -->
+      <a href="https://www.buymeacoffee.com/yourusername" 
+         target="_blank" 
+         style="display: inline-flex; align-items: center; text-decoration: none; background-color: #FFDD00; padding: 8px 12px; border-radius: 8px; font-family: Arial, sans-serif; font-weight: bold; color: #000;">
+        <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" 
+             alt="Buy Me a Coffee" 
+             style="height: 24px; margin-right: 8px;">
+        Buy Me a Coffee
+      </a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Bottom CTA -->
-  <section class="bottom-cta py-5 bg-primary text-center text-white">
-    <div class="container">
-      <h2 class="mb-3">Ready to Automate Your GitHub Insights?</h2>
-      <a href="fronted\pro-selection.html" class="btn btn-warning btn-lg">Go Pro Now →</a>
-    </div>
-  </section>
+
 
   <section class="faq py-5 bg-light">
         <div class="container">
@@ -270,7 +296,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="faq1">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
-                            What is the difference between Free and Pro?
+                            What is the difference between Free and By Me a Cofee?
                         </button>
                     </h2>
                     <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
